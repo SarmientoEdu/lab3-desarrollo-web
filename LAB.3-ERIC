@@ -1,0 +1,382 @@
+<!DOCTYPE html> 
+
+<!-- 2.2.1 Elemento Raíz con idioma --> 
+
+<html lang="es"> 
+
+<head> 
+
+    <!-- 2.2.2 Metadatos --> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+     
+
+    <!-- TODO 1: Completa tus datos de autor (Anti-Plagio) --> 
+
+    <meta name="author" content="Eric Alveo / 8-1032-304"> 
+
+    <meta name="description" content="Portal de Recursos Académicos y Multimedia UTP"> 
+
+     
+
+    <title>Laboratorio 3 - Portal Multimedia HTML5</title> 
+
+ 
+
+    <style> 
+
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f4f6f9; color: #333; line-height: 1.6; } 
+
+        header { background-color: #1b365d; color: white; padding: 1.5rem; text-align: center; } 
+
+        nav { background-color: #00a3e0; padding: 0.8rem; text-align: center; } 
+
+        nav a { color: white; margin: 0 12px; text-decoration: none; font-weight: bold; } 
+
+        .container { display: flex; max-width: 1100px; margin: 20px auto; gap: 20px; padding: 0 15px; } 
+
+        main { flex: 3; background: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); } 
+
+        aside { flex: 1; background: #eef2f7; padding: 20px; border-radius: 8px; height: fit-content; } 
+
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; } 
+
+        th, td { border: 1px solid #cbd5e1; padding: 10px; text-align: left; } 
+
+        th { background-color: #1b365d; color: white; } 
+
+        tfoot { background-color: #e2e8f0; font-weight: bold; } 
+
+        figure { border: 1px solid #ddd; padding: 10px; border-radius: 5px; text-align: center; margin: 15px 0; } 
+
+        figcaption { font-size: 0.85rem; color: #666; margin-top: 5px; } 
+
+        footer { background-color: #1b365d; color: white; text-align: center; padding: 1rem; margin-top: 30px; } 
+
+        .code-block { background: #1e1e1e; color: #d4d4d4; padding: 10px; border-radius: 5px; font-family: monospace; } 
+
+    </style> 
+
+</head> 
+
+<body> 
+
+ 
+
+    <!-- 2.2.4 Secciones: Encabezado Principal --> 
+
+    <header> 
+
+        <h1>Portal de Tecnología y Recursos Académicos</h1> 
+
+        <p>Universidad Tecnológica de Panamá | Facultad de Ingeniería de Sistemas Computacionales</p> 
+
+    </header> 
+
+ 
+
+    <!-- 2.2.4 Secciones: Navegación --> 
+
+    <nav> 
+
+        <a href="#articulos">Artículos</a> 
+
+        <a href="#horario">Horario</a> 
+
+        <a href="#multimedia">Multimedia</a> 
+
+        <a href="#referencias">Referencias</a> 
+
+    </nav> 
+
+ 
+
+    <div class="container"> 
+
+        <!-- 2.2.4 Secciones: Contenido Principal --> 
+
+        <main> 
+
+ 
+
+            <!-- SECCIÓN 1: ARTÍCULO TÉCNICO CON SEMÁNTICA DE TEXTO --> 
+
+            <section id="articulos"> 
+
+                <h2>1. Avances en el Desarrollo Web Moderno</h2> 
+
+                 
+
+                <article> 
+
+                    <h3>La Evolución de los Estándares</h3> 
+
+                    <p> 
+
+                        Publicado el <time datetime="2026-09-10">10 de septiembre de 2026</time> por <strong>Prof. Victor M. Sarmiento A.</strong> 
+
+                    </p> 
+
+                     
+
+                    <p> 
+
+                        El estándar HTML5 ha transformado la Web. Hoy en día es crucial utilizar <mark>etiquetas semánticas</mark> para mejorar el posicionamiento SEO y la accesibilidad WCAG. Por ejemplo, en JavaScript podemos realizar peticiones asíncronas usando: 
+
+                    </p> 
+
+ 
+
+                    <!-- 2.2.5 Agrupación y 2.2.7 Semántica de Texto --> 
+
+                    <div class="code-block"> 
+
+                        <code>fetch('https://api.utp.ac.pa/datos')</code> 
+
+                    </div> 
+
+ 
+
+                    <!-- TODO 2: Agrega una cita textual con <blockquote> y la fuente con <cite> --> 
+
+                    <blockquote> 
+
+                        "La tecnología es mejor cuando reúne a las personas. " 
+
+                        <br><cite>— Matt Mullenweg</cite> 
+
+                    </blockquote> 
+
+                </article> 
+
+            </section> 
+
+ 
+
+            <hr> 
+
+ 
+
+            <!-- SECCIÓN 2: TABLA DE PROGRAMACIÓN DE CLASES --> 
+
+            <section id="horario"> 
+
+                <h2>2. Programación de Sesiones del Semestre</h2> 
+
+                 
+
+                <!-- 2.2.6 Tablas Completa --> 
+
+                <table> 
+
+                    <caption>Horario de Clases y Laboratorios de Desarrollo Web</caption> 
+
+                    <thead> 
+
+                        <tr> 
+
+                            <th>Módulo</th> 
+
+                            <th>Tema Principal</th> 
+
+                            <th>Horas Presenciales</th> 
+
+                            <th>Estado</th> 
+
+                        </tr> 
+
+                    </thead> 
+
+                    <tbody> 
+
+                        <!-- TODO 3: Agrega 3 filas de contenido con datos reales de la asignatura --> 
+
+                        <tr> 
+
+                            <td>Módulo I</td> 
+
+                            <td>Introducción y Arquitectura Web</td> 
+
+                            <td>8 hrs</td> 
+
+                            <td><small>Completado</small></td> 
+
+                        </tr> 
+
+                        <tr> 
+
+                            <td>Módulo II</td> 
+
+                            <td>Estructura y Maquetación con HTML5</td> 
+
+                            <td>12 hrs</td> 
+
+                            <td><strong>En Curso</strong></td> 
+
+                        </tr> 
+
+                        <tr> 
+
+                            <td>Módulo III</td> 
+
+                            <td>Estilos y Diseños Responsivos con CSS3</td> 
+
+                            <td>16 hrs</td> 
+
+                            <td><small>Pendiente</small></td> 
+
+                        </tr> 
+
+                        <tr>
+
+                            <th scope="row">Módulo IV</th>
+                            <td>Backend con PHP y MySQL</td>
+                            <td>14 hrs</td>
+                            <td><small>Pendiente</small></td>                        
+                        
+                        </tr>
+
+                    </tbody> 
+
+                    <tfoot> 
+
+                        <tr> 
+
+                            <td colspan="2">Total de Horas Académicas</td> 
+
+                            <td colspan="2">36 Horas</td> 
+
+                        </tr> 
+
+                    </tfoot> 
+
+                </table> 
+
+            </section> 
+
+ 
+
+            <hr> 
+
+ 
+
+            <!-- SECCIÓN 3: CONTENIDO MULTIMEDIA E INCRUSTADO --> 
+
+            <section id="multimedia"> 
+
+                <h2>3. Galería Multimedia e Incrustada</h2> 
+
+ 
+
+                <!-- TODO 4: Imagen con figure y figcaption (2.2.5 y 2.2.8) --> 
+
+                <figure> 
+
+                    <img src="https://th.bing.com/th/id/R.e1d424c4b9be7009dd57ef4e7d58e343?rik=EZ8NO5x85jZ0Vg&riu=http%3a%2f%2f1.bp.blogspot.com%2f-NGHwBncyA68%2fUiMm_8b2ZUI%2fAAAAAAAAAnA%2f17OGXCKI4zE%2fs1600%2fLogo%2bHTML5.JPG&ehk=rnVe3RUksYQ4LMnsZ6Xxyf3F5lkj3Br1Eu6vOVCkYh0%3d&risl=&pid=ImgRaw&r=0" alt="Logo de HTML5" style="max-width: 100%;"> 
+
+                    <figcaption>Figura 1: Logo de HTML5 y representación de la tecnología web</figcaption> 
+
+                </figure> 
+
+ 
+
+                <!-- TODO 5: Contenido de Audio o Video nativo (2.2.8) --> 
+
+                <h3>Demostración de Audio Académico</h3> 
+
+                <audio controls> 
+
+                    <source src="audio-demo.mp3" type="audio/mpeg"> 
+
+                    Tu navegador no soporta el elemento de audio HTML5. 
+
+                </audio> 
+
+ 
+
+                <!-- TODO 6: Contenido Incrustado Externe con <iframe> (2.2.8) --> 
+
+                <h3>Ubicación del Campus Central UTP</h3> 
+
+                <iframe  
+
+                    src="https://maps.google.com/maps?q=Universidad%20Tecnol%C3%B3gica%20de%20Panam%C3%A1&t=&z=15&ie=UTF8&iwloc=&output=embed"  
+
+                    width="100%"  
+
+                    height="250"  
+
+                    style="border:0; border-radius: 8px;"  
+
+                    allowfullscreen=""  
+
+                    loading="lazy"> 
+
+                </iframe> 
+
+            </section> 
+
+ 
+
+        </main> 
+
+ 
+
+        <!-- 2.2.4 Secciones: Contenido Secundario / Lateral --> 
+
+        <aside id="referencias"> 
+
+            <h3>Recursos Rápidos</h3> 
+
+            <ul> 
+
+                <li><a href="https://developer.mozilla.org/es/" target="_blank">MDN Web Docs</a></li> 
+
+                <li><a href="https://www.w3.org/" target="_blank">W3C Standard</a></li> 
+
+                <li><a href="https://validator.w3.org/" target="_blank">W3C Validator</a></li> 
+
+            </ul> 
+
+ 
+
+            <!-- 2.2.3 Scripting y Soporte --> 
+
+            <h3>Estado del Sistema</h3> 
+
+            <script> 
+
+                document.write("<p><small>Fecha local: " + new Date().toLocaleDateString('es-PA') + "</small></p>"); 
+
+            </script> 
+
+            <noscript> 
+
+                <p style="color: red;"><small>⚠️ Su navegador no tiene JavaScript habilitado.</small></p> 
+
+            </noscript> 
+
+        </aside> 
+
+    </div> 
+
+ 
+
+    <!-- 2.2.4 Secciones: Pie de Página --> 
+
+    <footer> 
+
+        <p>&copy; 2026 Desarrollo Web — Universidad Tecnológica de Panamá</p> 
+
+        <p><small>Diseñado bajo estándares W3C y Accesibilidad WCAG</small></p> 
+
+    </footer> 
+
+ 
+
+</body> 
+
+</html> 
